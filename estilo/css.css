@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+:root{
+    --p: blue;
+    --s: white;
+}
+
+header{
+    height: 8rem;
+}
+
+header figure{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/banner.jpeg);
+    height: 5rem;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    color: var(--s);
+    background-color: var(--p);
+    height: 2rem;
+}
+
+main{
+    min-height: calc(100vh - 10rem);
+}
+
+footer{
+    height: 2rem;
+    display: flex;
+    justify-content: start; 
+    background-color: var(--p);   
+}
