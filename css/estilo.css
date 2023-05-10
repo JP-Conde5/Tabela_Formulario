@@ -5,24 +5,26 @@
   padding: 0;
   outline: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
 }
 
 :root{
-    --p: blue;
+    --p: rgb(19, 99, 247);
     --s: white;
+    --t: black;
 }
 
 header{
-    height: 8rem;
+    height: 7rem;
+    color: var(--s);
 }
 
-header figure{
-    display: block;
+header div{
+    display: flex;
     align-items: center;
     justify-content: center;
     background-image: url(../img/banner.jpeg);
     height: 5rem;
+    text-shadow: 0.2rem 0rem 0rem var(--t);
 }
 
 header nav ul{
@@ -30,18 +32,33 @@ header nav ul{
     align-items: center;
     justify-content: space-around;
     list-style-type: none;
-    color: var(--s);
     background-color: var(--p);
     height: 2rem;
+    font-size: 1.5rem;
 }
 
 main{
-    min-height: calc(100vh - 10rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 9rem);
+}
+
+main 
+
+main div ol{
+    list-style-type: upper-roman;
 }
 
 footer{
     height: 2rem;
     display: flex;
-    justify-content: start; 
-    background-color: var(--p);   
+    justify-content: start;
+    align-items: center; 
+    background-color: var(--p);  
+    color: var(--s); 
+}
+
+footer div{
+    padding-left: 1rem;
 }
