@@ -40,11 +40,13 @@ header nav ul{
 main{
     display: flex;
     justify-content: center;
-    align-items: center;
     min-height: calc(100vh - 9rem);
 }
 
-main 
+main div{
+    width: 85%;
+    padding: 5%;
+}
 
 main div ol{
     list-style-type: upper-roman;
@@ -57,8 +59,10 @@ footer{
     align-items: center; 
     background-color: var(--p);  
     color: var(--s); 
+    border-bottom: 0.5rem solid var(--p);
+    border-radius: 5%;
 }
 
-footer div{
+footer p{
     padding-left: 1rem;
 }
