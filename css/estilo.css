@@ -9,13 +9,13 @@
 
 :root{
     --p: rgb(19, 99, 247);
-    --s: white;
-    --t: black;
+    --w: white;
+    --b: black;
 }
 
 header{
-    height: 7rem;
-    color: var(--s);
+    height: 9rem;
+    color: var(--w);
 }
 
 header div{
@@ -23,8 +23,8 @@ header div{
     align-items: center;
     justify-content: center;
     background-image: url(../img/banner.jpeg);
-    height: 5rem;
-    text-shadow: 0.2rem 0rem 0rem var(--t);
+    height: 6.5rem;
+    text-shadow: 0.2rem 0rem 0rem var(--b);
 }
 
 header nav ul{
@@ -37,19 +37,28 @@ header nav ul{
     font-size: 1.5rem;
 }
 
-main{
-    display: flex;
-    justify-content: center;
-    min-height: calc(100vh - 9rem);
+header nav ul li:hover{
+    background-color: aqua;
 }
 
-main div{
+.text{
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh - 10.5rem);
+    text-align: justify;
+}
+
+.text div{
     width: 85%;
     padding: 5%;
 }
 
-main div ol{
+.text div ol{
     list-style-type: upper-roman;
+}
+
+.text div ul{
+    list-style-type: square;
 }
 
 footer{
