@@ -13,6 +13,8 @@
     --b: black;
 }
 
+/*Cabeçalho Padrão*/
+
 header{
     height: 9rem;
     color: var(--w);
@@ -47,32 +49,36 @@ header nav ul li a:hover{
     font-size: 2rem;
 }
 
-main{
+/*==========================================================================*/
+/*Corpo do curso e index*/
+
+
+.text{
     display: flex;
     justify-content: center;
     min-height: calc(100vh - 11rem);
     text-align: justify;
 }
 
-main div{
+.text div{
     width: 85%;
     padding: 5%;
 }
 
-main div ol{
+.text div ol{
     list-style-type: upper-roman;
 }
 
-main div ul{
+.text div ul{
     list-style-type: square;
 }
 
-main table{
+.text table{
     width: 80%;
     border-collapse: collapse;
 }
 
-main tr td, main tr th{
+.text tr td, main tr th{
     text-align: center;
     border: 0.2rem solid var(--b);
 }
@@ -81,6 +87,17 @@ main tr td, main tr th{
     text-align: justify;
     padding-left: 1rem;
 }
+
+.perg{
+    width: 100vh;
+}
+
+.resp li{
+    width: 100vh;
+}
+
+/*==========================================================================*/
+/*Rodapé padrão*/
 
 footer{
     height: 2rem;
