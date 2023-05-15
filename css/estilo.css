@@ -8,7 +8,7 @@
 }
 
 :root{
-    --p: rgb(19, 99, 247);
+    --p: #2B75E2;
     --w: white;
     --b: black;
 }
@@ -37,28 +37,49 @@ header nav ul{
     font-size: 1.5rem;
 }
 
-header nav ul li:hover{
-    background-color: aqua;
+header nav ul li a{
+    color: var(--w);
+    text-decoration: none;
 }
 
-.text{
+header nav ul li a:hover{
+    color: aqua;
+    font-size: 2rem;
+}
+
+main{
     display: flex;
     justify-content: center;
-    min-height: calc(100vh - 10.5rem);
+    min-height: calc(100vh - 11rem);
     text-align: justify;
 }
 
-.text div{
+main div{
     width: 85%;
     padding: 5%;
 }
 
-.text div ol{
+main div ol{
     list-style-type: upper-roman;
 }
 
-.text div ul{
+main div ul{
     list-style-type: square;
+}
+
+main table{
+    width: 80%;
+    border-collapse: collapse;
+}
+
+main tr td, main tr th{
+    text-align: center;
+    border: 0.2rem solid var(--b);
+}
+
+.val{
+    text-align: justify;
+    padding-left: 1rem;
 }
 
 footer{
@@ -74,4 +95,5 @@ footer{
 
 footer p{
     padding-left: 1rem;
+    color: var(--w);
 }
