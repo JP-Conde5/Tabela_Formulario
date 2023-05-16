@@ -9,10 +9,13 @@
 
 :root{
     --p: #2B75E2;
+    --s: aqua;
+    --c: lightgray;
     --w: white;
     --b: black;
 }
 
+/*==========================================================================*/
 /*Cabeçalho Padrão*/
 
 header{
@@ -25,7 +28,7 @@ header div{
     align-items: center;
     justify-content: center;
     background-image: url(../img/banner.jpeg);
-    height: 6.5rem;
+    height: 7rem;
     text-shadow: 0.2rem 0rem 0rem var(--b);
 }
 
@@ -45,55 +48,115 @@ header nav ul li a{
 }
 
 header nav ul li a:hover{
-    color: aqua;
+    color:  var(--s);
     font-size: 2rem;
 }
 
 /*==========================================================================*/
-/*Corpo do curso e index*/
+/*Corpo Geral*/
 
-
-.text{
+main{
     display: flex;
     justify-content: center;
     min-height: calc(100vh - 11rem);
     text-align: justify;
 }
 
-.text div{
+/*==========================================================================*/
+/*Corpo do index*/
+
+.text article{
     width: 85%;
     padding: 5%;
+    font-size: larger;
 }
 
-.text div ol{
+.text article ol{
     list-style-type: upper-roman;
 }
 
-.text div ul{
+.text article ul{
     list-style-type: square;
 }
 
-.text table{
-    width: 80%;
-    border-collapse: collapse;
+.text article ul, ol{
+    margin-left: 3rem;
 }
 
-.text tr td, main tr th{
+/*==========================================================================*/
+/*Corpo do curso*/
+
+.tab table{
+    width: 80%;
+    border-collapse: collapse;
+    height: 80%;
+    font-size: larger;
+}
+
+.tab tr td, main tr th{
     text-align: center;
     border: 0.2rem solid var(--b);
 }
 
-.val{
-    text-align: justify;
-    padding-left: 1rem;
+.tab div{
+    width: 85%;
+    padding: 5%;
+}
+
+.tab .val{
+    text-align: left;
+    padding: 1rem;
+}
+
+.neg, .parte{
+    font-weight: bold;
+}
+
+.parte{
+    font-size: x-large;
+}
+
+/*==========================================================================*/
+/*Corpo do faq*/
+
+.faq{
+    flex-direction: column;
+}
+
+.perg, .resp li{
+    margin: 5%;
+    padding: 5%;
+    font-size: larger;
+}
+
+.perg a, .resp li a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--b)
+}
+
+.perg a:hover, .resp li a:hover{
+    font-size: 2rem;
+    color: var(--s);
 }
 
 .perg{
-    width: 100vh;
+    height: 100vh;
+}
+
+.perg ol li{
+    font-weight: bolder;
+}
+
+.resp{
+    list-style-type: none;
 }
 
 .resp li{
-    width: 100vh;
+    height: 100vh;
+    background-color: var(--c);
+    border: 1rem solid var(--c);
+    border-radius: 5%;
 }
 
 /*==========================================================================*/
