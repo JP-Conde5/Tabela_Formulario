@@ -227,10 +227,16 @@ footer{
     background-color: var(--p);  
     color: var(--s); 
     border-bottom: 0.5rem solid var(--p);
-    border-radius: 5%;
+    border-bottom-left-radius: 8%;
+    border-bottom-right-radius: 8%;
 }
 
 footer p{
     padding-left: 1rem;
     color: var(--w);
+}
+
+.footer{
+    background-color: var(--b);
+    height: 2rem;
 }
